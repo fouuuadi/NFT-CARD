@@ -34,6 +34,7 @@ body {
 }
 
 .container .main-image {
+    overflow: hidden;
     position: relative;
 }
 
@@ -42,7 +43,7 @@ body {
     top: 0;
     background-color: hsl(178, 100%, 50%, 60%);
     width: 100%;
-    height: calc(100% - 4px);
+    height: 100%;
     z-index: 999;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
@@ -81,6 +82,11 @@ body {
 .container ul li {
     display: flex;
     align-items: center;
+}
+
+.main-image:hover .lolo {
+    transition: all 0.5s;
+    transform: scale(1.2);
 }
 
 .container ul li img {
